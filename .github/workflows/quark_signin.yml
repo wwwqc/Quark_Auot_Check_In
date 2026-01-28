@@ -37,7 +37,7 @@ jobs:
           COOKIE_QUARK: ${{ secrets.COOKIE_QUARK }}
         run: |
           echo "===== 【北京时间10:30】夸克签到开始 ====="
-          python quark_sign.py
+          python checkIn_Quark.py
           echo "===== 【北京时间10:30】夸克签到结束 ====="
 
   # 任务2：北京时间11:30执行（仅1次，无重试，与任务1逻辑完全一致）
@@ -66,6 +66,6 @@ jobs:
           COOKIE_QUARK: ${{ secrets.COOKIE_QUARK }}
         run: |
           echo "===== 【北京时间11:30】夸克签到开始 ====="
-          python quark_sign.py
+          python checkIn_Quark.py
           echo "===== 【北京时间11:30】夸克签到结束 ====="
 
